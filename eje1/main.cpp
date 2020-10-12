@@ -1,18 +1,12 @@
 #include <iostream>
-class shape
+#include <Shape.hpp>
+int main(int argc, char ** argv)
 {
- public:
-shape(int Ancho, int Alto ) : Ancho(m_Ancho),
-Alto(m_Alto)
-{
-<<std::cout<<"Los parametros son :"<<Ancho<<"y"<<Alto<<std::end1;
-}
-int areaT()
-{
- return m_Ancho * m_Alto;
-}
-private:
-int m_Ancho;
-int m_Alto;
-}
+int A=15,B=24;
+shape triangulo(A,B);
+shape2 Rectangulo(A,B);
 
+std::cout << "Area del triangulo = " << triangulo.areaT() << std::endl;
+std::cout << "Area del Rectangulo = " << Rectangulo.areaC() << std::endl;
+    return 0;
+}
